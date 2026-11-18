@@ -1,0 +1,2 @@
+SELECT [62304_5338].*, [5338_activities].activity_id, [5338_activities].activity, [5338_activities].[task_name], [62304].task_description
+FROM (5338_activities INNER JOIN 62304_5338 ON ([62304_5338].process_3_id_5338 = [5338_activities].process_3_id) AND ([62304_5338].process_2_id_5338 = [5338_activities].process_2_id)) LEFT JOIN 62304 ON ([62304_5338].task_id_62304 = [62304].task_id) AND ([62304_5338].task_62304 = [62304].task_name);
